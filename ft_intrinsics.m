@@ -286,8 +286,8 @@ FoldingTableRow := function(u, t, datum, Jdatum)
     return outputs;
 end function;
 
-intrinsic LongRoots(type::MonStgElt) -> SeqEnum
-{Gives the long roots of the root datum associated to type}
+// Gives the long roots of the root datum associated to type
+LongRoots := function(type)
     roots := Roots(RootSystem(ReflectionGroup(type)));
     longroots := [];
     for i in [1..#roots] do 
@@ -296,10 +296,10 @@ intrinsic LongRoots(type::MonStgElt) -> SeqEnum
         end if;
     end for;
     return longroots;
-end intrinsic;
+end function;
 
-intrinsic ShortRoots(type::MonStgElt) -> SeqEnum
-{Gives the short roots of the root datum associated to type}
+// Gives the short roots of the root datum associated to type
+ShortRoots := function(type)
     roots := Roots(RootSystem(ReflectionGroup(type)));
     shortroots := [];
     for i in [1..#roots] do 
@@ -308,10 +308,10 @@ intrinsic ShortRoots(type::MonStgElt) -> SeqEnum
         end if;
     end for;
     return shortroots;
-end intrinsic;
+end function;
 
-intrinsic LongEltSet(J::SetEnum, W::GrpFPCox) -> SeqEnum
-{Gives the long element of W_J for a subset J of I}
+//Gives the long element of W_J for a subset J of I
+LongEltSet := function(J,W)
     J := [ j : j in J];
     Sort(~J,func<v,w|v-w>);
     if #J eq 0 then
@@ -326,20 +326,20 @@ intrinsic LongEltSet(J::SetEnum, W::GrpFPCox) -> SeqEnum
         wJ := wJ cat [x[2][i]: i in x[1]];
     end for;
     return wJ;
-end intrinsic;
+end function;
 
-intrinsic FoldingTable(t::SeqEnum, type::MonStgElt, J::SetEnum)
-{Prints folding table}
+// Prints folding table
+FoldingTable := procedure(t, type, J)
     datum := CoxeterSetup(type);
     Jdatum := ParabolicSetup(J, datum);
     t;
     for u in [1..#Jdatum[3]] do
         <FoldingTableRow(u, t, datum, Jdatum), u>;
     end for;
-end intrinsic;
+end procedure;
 
-intrinsic FoldingTableWrite(t::SeqEnum, type::MonStgElt, J::SetEnum, file::MonStgElt)
-{Writes folding table to a txt file}
+// Copies folding table to file
+FoldingTableWrite := procedure(t, type, J, file) 
     datum := CoxeterSetup(type);
     Jdatum := ParabolicSetup(J, datum);
     if #J eq 0 then Write(file, type cat " " cat "{" cat "}");
@@ -350,4 +350,4 @@ intrinsic FoldingTableWrite(t::SeqEnum, type::MonStgElt, J::SetEnum, file::MonSt
         Write(file, &cat([x cat "," : x in FoldingTableRow(u, t, datum, Jdatum)]));
     end for;
     "Wrote to " cat file cat "!";
-end intrinsic;
+end procedure;
