@@ -1,6 +1,4 @@
 FoldingTables
 {
-    ft_helper.m
-    ft_main.m
     ft_intrinsics.m
 }
