@@ -58,7 +58,7 @@ For example, FoldingTable([4,1,3,1,2,4],"A3",{1,2}) prints the following
 
 Note that, as always in MAGMA, the affine generator is written as $n+1$ and not $0$. 
 
-Here are some possible paths formed from this folding table: we write $k$ instead of $s_k$ and denote $\hat{k}$ to be a fold at $v_{k-1} \to v_k$ and $\overline{k}$ denote a bounce at $v_{k-1} \to v_k$
+Here are some possible paths formed from this folding table: we write $k$ instead of $s_k$ and denote $\hat{k}$ to be a fold at $v_{k-1} \to v_k$ and $\overline{k}$ to be a bounce at $v_{k-1} \to v_k$
 
 1. $41\overline{3}1\overline{2}4$ beginning at $u_1$
 2. $\overline{4}\hat{1}\overline{3}1\overline{2}\hat{4}$ beginning at $u_3$
