@@ -17,8 +17,9 @@ be the fundamental $J$-alcove where $\Phi_J\subseteq \Phi$ is the root system of
 Let $\overrightarrow{w} = s_{i_1}s_{i_2}\cdots s_{i_\ell}$ be an expression for $w\in W$ and $i_1,\dots i_\ell\in I\cup\{0\}$. A $J$*-folded alcove path* of type $\vec{w}$ starting at $v_0\in \mathbb{W}^J$ is the sequence $p = (v_0,v_1,\dots,v_\ell)$ where $v_1,\dots, v_\ell\in \mathbb{W}^J$ and we have the following conditions: for $1\leq k\leq \ell$
 1. $v_k\in \\{v_{k-1},v_{k-1}s_{i_k}\\}$
 2. if $v_{k-1} = v_k$ then either 
+
     1. $v_{k-1}s_{i_k}A_0\subseteq \mathcal{A}_J$ and $v_{k-1}A_0{^+}|^-v_{k-1}s_{i_k}A_0$, or 
-    
+
     2. $v_{k-1}s_{i_k}A_0\nsubseteq \mathcal{A}_J$
 
 Path $p$ has length $\ell$ and we define $\mathrm{end}(p) = v_\ell\sigma$ and $\mathrm{start}(p) = v_0$. Let $f(p)$ be the number of folds of $p$. We call a $J$-folded alcove path $p$ 'straight' if $f(p) = 0$. For $v\in \mathbb{W}^J$ and $w\in \widetilde{W}$, denote
