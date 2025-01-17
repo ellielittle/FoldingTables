@@ -47,9 +47,13 @@ To print the folding table call the function FoldingTable(x, type, J). Here $x\i
 For example, FoldingTable([4,1,3,1,2,4],"A3",{1,2});   prints the following
 
 [ 4, 1, 3, 1, 2, 4 ]
+
 <[ -, -, *, 3, *, 2 ], 1>
+
 <[ *, *, -, *, *, - ], 2>
+
 <[ *, 1, *, -, -, * ], 3>
+
 <[ 1, *, 2, *, 3, * ], 4>
 
 Note that, as always in MAGMA, the affine generator is written as $n+1$ and not $0$. 
