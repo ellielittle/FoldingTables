@@ -20,7 +20,7 @@ Let $\overrightarrow{w} = s_{i_1}s_{i_2}\cdots s_{i_\ell}$ be an expression for 
     1. $v_{k-1}s_{i_k}A_0\subseteq \mathcal{A}\_J$ and $v_{k-1}A_0{^+}|^-v_{k-1}s_{i_k}A_0$, or 
     2. $v_{k-1}s_{i_k}A_0\nsubseteq \mathcal{A}_J$
 
-Path $p$ has length $\ell$ and we define $\mathrm{end}(p) = v_\ell\sigma$ and $\mathrm{start}(p) = v_0$. If $v_k = v_{k-1}s_{i_k}$ and $v_{k-1}A_0{^-}|^+v_{k}A_0$ we call this step a positive crossing, whereas if $v_k = v_{k-1}s_{i_k}$ and $v_{k-1}A_0{^+}|^-v_{k}A_0$ we call this step a negative crossing. If $v_k = v_{k-1}$ and $v_{k-1}s_{i_k}A_0\nsubseteq \mathcal{A}\_J$ this step is called a bounce and if $v_k = v_{k-1}$ and $v_{k-1}s_{i_k}A_0\subseteq \mathcal{A}\_J$ (so $v_{k-1}A_0{^+}|^-v_{k-1}s_{i_k}A_0$) this step a positive fold (or fold for short). 
+Path $p$ has length $\ell$ and we define $\mathrm{end}(p) = v_\ell\sigma$ and $\mathrm{start}(p) = v_0$. If $v_k = v_{k-1}s_{i_k}$ and $v_{k-1}A_0{^-}|^+v_{k}A_0$ we call this step a positive crossing, whereas if $v_k = v_{k-1}s_{i_k}$ and $v_{k-1}A_0{^+}|^-v_{k}A_0$ we call this step a negative crossing. If $v_k = v_{k-1}$ and $v_{k-1}s_{i_k}A_0\nsubseteq \mathcal{A}\_J$ this step is called a bounce and if $v_k = v_{k-1}$ and $v_{k-1}s_{i_k}A_0\subseteq \mathcal{A}\_J$ (so $v_{k-1}A_0{^+}|^-v_{k-1}s_{i_k}A_0$) this step is called a positive fold (or fold for short). 
 
 Let $f(p)$ be the number of folds of $p$. We call a $J$-folded alcove path $p$ 'straight' if $f(p) = 0$. For $v\in \mathbb{W}^J$ and $w\in \widetilde{W}$, denote
 
@@ -34,7 +34,7 @@ For each $1\leq i\leq r$ and $1\leq k\leq \ell(x)$ define $\mathsf{ft}_{i,k}(\ve
 
 1. If $p^i$ has a positive crossing at the $k$-th step, then $\mathsf{ft}_{i,k} = -$,
 2. If $p^i$ has a bounce at the $k$-th step, then $\mathrm{ft}_{i,k} = *$, and 
-3. If $p^i$ has a negative crossing at the $k$-th step, then $\mathsf{ft}_{i,k} = j$, where $u_{j} = \theta^J(p')$ and $p'$ is the straight path in $\mathcal{P}_J(\mathrm{rev}(\vec{x}),\theta^J(p_k^i))$
+3. If $p^i$ has a negative crossing at the $k$-th step, then $\mathsf{ft}_{i,k} = j$, where $j$ is such that $p_k^i$ and $p^j$ agree after the $k$-th step (up to some translation, $\tau_\ga$, see Definition 3.9 of https://arxiv.org/abs/2212.10781)
 
 The $J$*-folding table of type* $\vec{x}$ is then the $r\times \ell(x)$ array where the $(i,k)$-th entry is $\mathsf{ft}_{i,k}$. 
 
