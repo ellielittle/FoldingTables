@@ -3,7 +3,9 @@ This code generates the folding table for any element of a (reduced and irreduci
 # Background
 
 Let $V$ be the underlying vector space of the root system $\Phi$ of which our Coxeter group, $W$ is defined. The set of alcoves $\mathbb{A}$ is the set of the open connected components of $V\setminus (\bigcup_{\alpha,k}H_{\alpha,k})$ where $H_{\alpha,k} = \\{x\in V\mid \langle x,\alpha-k\delta\rangle = 0\\} = \\{x\in V\mid \langle x,\alpha\rangle = k\\}$ is the hyperplane corresponding to $\alpha\in \Phi$ and $k\in \mathbb{Z}$. We define the periodic orientation of each hyperplane $H_{\alpha,k}$ as follows:
+
 $$H_{\alpha,k}^+ = \\{x\in V \mid \langle x,\alpha \rangle \geq k\\}\quad\text{ and }\quad H_{\alpha,k}^-=\\{x\in V \mid \langle x,\alpha \rangle\leq k\\}.$$
+
 For two adjuacent alcoves $A,A'\in \mathbb{A}$, we write $A {^-}| ^+ A'$ if $A$ is on the negative side and $A'$ is of the positive side of the hyperplane containing their shared panel. Denote $A_0 =\\{x\in V \mid 0\leq \langle x,\alpha \rangle \leq 1 \text{ for all } \alpha \in \Phi^+\\}$ to be the fundamental alcove. 
 
 Let $J\subset I = \\{1,2,3,\dots, n\\}$ be a subset of the indices of the finite generators of $W$ and let
