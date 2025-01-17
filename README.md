@@ -1,6 +1,6 @@
 This code generates the folding table for any element of a (reduced and irreducible) affine Weyl group. The concept of folding tables was introduced by Guilhot and Parkinson (Guilhot J, Parkinson J. A proof of Lusztig's conjectures for affine type $\tilde{G}_2$ with arbitrary parameters. Proceedings of the London Mathematical Society. 2019;118(5):1188-244.). This code generalises the definition to apply to all affine Coxeter types.
 
-#Background
+# Background
 
 Let $V$ be the underlying vector space of the root system $\Phi$ of which our Coxeter group, $W$ is defined. The set of alcoves $\mathbb{A}$ is the set of the open connected components of $V\backslash (\bigcup _{\alpha,k}H_{\alpha,k})$ where $H_{\alpha,k} = \\{x\in V\mid \langle x,\alpha-k\delta\rangle = 0\\} = \\{x\in V\mid \langle x,\alpha\rangle = k\\}$ is the hyperplane corresponding to $\alpha\in \Phi$ and $k\in \mathbb{Z}$. We define the periodic orientation of each hyperplane $H_{\alpha,k}$ as follows:
 $$H_{\alpha,k}^+ = \\{x\in V \mid \langle x,\alpha \rangle \geq k\\}\quad\text{ and }\quad H_{\alpha,k}^-=\\{x\in V \mid \langle x,\alpha \rangle\leq k\\}.$$
