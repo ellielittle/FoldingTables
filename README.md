@@ -38,3 +38,24 @@ For each $1\leq i\leq r$ and $1\leq k\leq \ell(x)$ define $\mathsf{ft}_{i,k}(\ve
 
 The $J$*-folding table of type* $\vec{x}$ is then the $r\times \ell(x)$ array where the $(i,k)$-th entry is $\mathsf{ft}_{i,k}$. 
 
+To find a path $p\in \mathcal{P}_J(\vec{x},u_i)$ we read the folding table left to right beginning at position $(i,1)$. As one moves along the row of the folding table one may choose to fold when they reach a number. If one chooses to fold at the point $(i,k)$ they must then move to $(j,k+1)$ and continue to move along the row $j$ (where $j$ is chosen so that $p_k^i$ and $p^j$ agree after the $k-th$ step). 
+
+# Code 
+
+To print the folding table call the function FoldingTable(x, type, J). Here $x\in W$ is the element you wish to find the folding table of written as a list of generator indices, type is the Coxeter type (eg A2 or F4, note that the ~ is not needed) and $J$ is the chosen subset of $I$. 
+
+For example, FoldingTable([4,1,3,1,2,4],"A3",{1,2});   prints the following
+
+[ 4, 1, 3, 1, 2, 4 ]
+<[ -, -, *, 3, *, 2 ], 1>
+<[ *, *, -, *, *, - ], 2>
+<[ *, 1, *, -, -, * ], 3>
+<[ 1, *, 2, *, 3, * ], 4>
+
+Note that, as always in MAGMA, the affine generator is written as $n+1$ and not $0$. 
+
+Here are some possible paths formed from this folding table: we write $k$ instead of $s_k$ and denote $\hat{k}$ to be a fold at $v_{k-1} \to v_k$ and $\overline{k}$ denote a bounce at $v_{k-1} \to v_k$
+
+1. $41\overline{3}1\overline{2}4$ beginning at $u_1$
+2. $\overline{4}\hat{1}\overline{3}1\overline{2}\hat{4}$ beginning at $u_3$
+3. $\hat{4}1\overline{3}\hat{1}2\overline{4}$ beginning at $u_4$
