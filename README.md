@@ -44,7 +44,7 @@ To find a path $p\in \mathcal{P}_J(\vec{x},u_i)$ we read the folding table left 
 
 To print the folding table call the function FoldingTable(x, type, J). Here $x\in W$ is the element you wish to find the folding table of written as a list of generator indices, type is the Coxeter type (eg A2 or F4, note that the ~ is not needed) and $J$ is the chosen subset of $I$. 
 
-For example, FoldingTable([4,1,3,1,2,4],"A3",{1,2});   prints the following
+For example, FoldingTable([4,1,3,1,2,4],"A3",{1,2}) prints the following
 
 [ 4, 1, 3, 1, 2, 4 ]
 
