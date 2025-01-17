@@ -38,7 +38,7 @@ For each $1\leq i\leq r$ and $1\leq k\leq \ell(x)$ define $\mathsf{ft}_{i,k}(\ve
 
 The $J$*-folding table of type* $\vec{x}$ is then the $r\times \ell(x)$ array where the $(i,k)$-th entry is $\mathsf{ft}_{i,k}$. 
 
-To find a path $p\in \mathcal{P}_J(\vec{x},u_i)$ we read the folding table left to right beginning at position $(i,1)$. As one moves along the row of the folding table one may choose to fold when they reach a number. If one chooses to fold at the point $(i,k)$ they must then move to $(j,k+1)$ and continue to move along the row $j$ (where $j$ is chosen so that $p_k^i$ and $p^j$ agree after the $k-th$ step). 
+To find a path $p\in \mathcal{P}_J(\vec{x},u_i)$ we read the folding table left to right beginning at position $(i,1)$. As one moves along the row of the folding table one may choose to fold when they reach a number. If one chooses to fold at the point $(i,k)$ they must then move to $(j,k+1)$ and continue to move along the row $j$ (where $j$ is chosen so that $p_k^i$ and $p^j$ agree after the $k$-th step). 
 
 # Code 
 
