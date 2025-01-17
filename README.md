@@ -34,7 +34,7 @@ For each $1\leq i\leq r$ and $1\leq k\leq \ell(x)$ define $\mathsf{ft}_{i,k}(\ve
 
 1. If $p^i$ has a positive crossing at the $k$-th step, then $\mathsf{ft}_{i,k} = -$,
 2. If $p^i$ has a bounce at the $k$-th step, then $\mathrm{ft}_{i,k} = *$, and 
-3. If $p^i$ has a negative crossing at the $k$-th step, then $\mathsf{ft}_{i,k} = j$, where $j$ is such that $p_k^i$ and $p^j$ agree after the $k$-th step (up to some translation, $\tau_\ga$, see Definition 3.9 of https://arxiv.org/abs/2212.10781)
+3. If $p^i$ has a negative crossing at the $k$-th step, then $\mathsf{ft}_{i,k} = j$, where $j$ is such that $p_k^i$ and $p^j$ agree after the $k$-th step (up to some translation, $\tau\_\ga$, see Definition 3.9 of https://arxiv.org/abs/2212.10781)
 
 The $J$*-folding table of type* $\vec{x}$ is then the $r\times \ell(x)$ array where the $(i,k)$-th entry is $\mathsf{ft}_{i,k}$. 
 
