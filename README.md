@@ -26,5 +26,5 @@ For each $1\leq i\leq r$ and $1\leq k\leq \ell(x)$ define $\mathsf{ft}_{i,k}(\ve
 2. If $p^i$ has a bounce at the $k$-th step, then $\mathrm{ft}_{i,k} = *$, and 
 3. If $p^i$ has a negative crossing at the $k$-th step, then $\mathsf{ft}_{i,k} = j$, where $u_{j} = \theta^J(p')$ and $p'$ is the straight path in $\mathcal{P}_J(\mathrm{rev}(\vec{x}),\theta^J(p_k^i))$
 
-The *$J$-folding table of type $\vec{x}$* is then the $r\times \ell(x)$ array where the $(i,k)$-th entry is $\mathsf{ft}_{i,k}$. new
+The *$J$-folding table of type $\vec{x}$* is then the $r\times \ell(x)$ array where the $(i,k)$-th entry is $\mathsf{ft}_{i,k}$. 
 
