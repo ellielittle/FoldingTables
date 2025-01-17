@@ -63,3 +63,5 @@ Here are some possible paths formed from this folding table: we write $k$ instea
 1. $41\overline{3}1\overline{2}4$ beginning at $u_1$
 2. $\overline{4}\hat{1}\overline{3}1\overline{2}\hat{4}$ beginning at $u_3$
 3. $\hat{4}1\overline{3}\hat{1}2\overline{4}$ beginning at $u_4$
+
+The code also contains a function that will write the folding table to a txt file. To call this function write FoldingTableWrite(t,type,J,file) where file is the file you want to write too.
